@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Scale, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -12,10 +12,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-button bg-teal flex items-center justify-center">
-              <Scale className="w-4 h-4 text-white" strokeWidth={2} />
-            </div>
+          <Link href="/" className="flex items-center gap-2">
+            <span className="text-teal text-lg">◆</span>
             <span className="text-lg font-bold font-heading tracking-tight">
               Legal<span className="text-teal">Forge</span>
             </span>
