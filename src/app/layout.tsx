@@ -18,14 +18,24 @@ export const metadata: Metadata = {
     title: "LegalForge — AI Legal Document Generator",
     description:
       "Generate tailored Privacy Policies, Terms of Service, and Cookie Policies in 60 seconds.",
-    type: "website",
+    url: "https://legalforge-chi.vercel.app",
     siteName: "LegalForge",
+    images: [
+      {
+        url: "https://legalforge-chi.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "LegalForge — AI Legal Document Generator",
+      },
+    ],
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "LegalForge — AI Legal Document Generator",
     description:
       "Generate tailored Privacy Policies, Terms of Service, and Cookie Policies in 60 seconds.",
+    images: ["https://legalforge-chi.vercel.app/og-image.png"],
   },
   robots: {
     index: true,
