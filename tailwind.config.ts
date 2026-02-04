@@ -9,21 +9,52 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        outfit: ["Outfit", "sans-serif"],
-        sora: ["Sora", "sans-serif"],
+        heading: ["'Space Grotesk'", "sans-serif"],
+        body: ["'DM Sans'", "sans-serif"],
+        mono: ["'IBM Plex Mono'", "monospace"],
       },
       colors: {
         brand: {
-          black: "#000000",
-          dark: "#18181b",
+          dark: "#0B0F1A",
+          surface: "#111827",
+          slate: "#1E293B",
+        },
+        teal: {
+          DEFAULT: "#0D9488",
+          deep: "#0F766E",
+          soft: "#99F6E4",
+        },
+        txt: {
+          primary: "#F8FAFC",
+          secondary: "#94A3B8",
+          muted: "#64748B",
+        },
+        border: {
+          DEFAULT: "#334155",
+        },
+        status: {
+          green: "#10B981",
+          amber: "#F59E0B",
+          rose: "#F43F5E",
         },
       },
-      backgroundImage: {
-        "gradient-accent": "linear-gradient(120deg, #818cf8, #4338ca)",
-      },
       borderRadius: {
-        button: "8px",
-        card: "16px",
+        button: "6px",
+        card: "8px",
+        badge: "4px",
+      },
+      boxShadow: {
+        "teal-glow": "0 0 0 1px rgba(13, 148, 136, 0.25)",
+        "teal-glow-lg": "0 0 20px rgba(13, 148, 136, 0.15)",
+      },
+      backgroundImage: {
+        "gradient-brand": "linear-gradient(160deg, #0F172A 0%, #134E4A 100%)",
+      },
+      fontSize: {
+        base: ["15px", "1.6"],
+      },
+      letterSpacing: {
+        "tight-h1": "-0.03em",
       },
     },
   },

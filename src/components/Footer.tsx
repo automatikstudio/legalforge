@@ -1,60 +1,49 @@
 import Link from "next/link";
+import { Scale } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-800 bg-black">
+    <footer className="border-t border-border bg-brand-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-accent flex items-center justify-center">
-                <svg
-                  className="w-5 h-5 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  />
-                </svg>
+            <div className="flex items-center gap-2.5 mb-4">
+              <div className="w-8 h-8 rounded-button bg-teal flex items-center justify-center">
+                <Scale className="w-4 h-4 text-white" strokeWidth={2} />
               </div>
-              <span className="text-xl font-bold font-outfit">
-                Legal<span className="text-gradient">Forge</span>
+              <span className="text-lg font-bold font-heading tracking-tight">
+                Legal<span className="text-teal">Forge</span>
               </span>
             </div>
-            <p className="text-zinc-400 text-sm max-w-md mb-4">
+            <p className="text-txt-secondary text-sm max-w-md mb-4 leading-relaxed">
               AI-powered legal document generation. Scan your website and get
               tailored Privacy Policies, Terms of Service, and Cookie Policies in
               seconds.
             </p>
-            <p className="text-zinc-500 text-xs">
-              A product by{" "}
+            <p className="text-txt-muted text-xs">
+              Built by{" "}
               <a
                 href="https://automatik.studio"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-indigo-400 hover:text-indigo-300"
+                className="text-teal hover:text-teal-soft transition-colors duration-150"
               >
-                Automatik Studio
+                Automatik.studio
               </a>
             </p>
           </div>
 
           {/* Product */}
           <div>
-            <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">
+            <h4 className="font-heading font-semibold text-txt-primary mb-4 text-xs uppercase tracking-widest">
               Product
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               <li>
                 <Link
                   href="/#features"
-                  className="text-zinc-400 hover:text-white text-sm transition-colors"
+                  className="text-txt-secondary hover:text-txt-primary text-sm transition-colors duration-150"
                 >
                   Features
                 </Link>
@@ -62,7 +51,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/#pricing"
-                  className="text-zinc-400 hover:text-white text-sm transition-colors"
+                  className="text-txt-secondary hover:text-txt-primary text-sm transition-colors duration-150"
                 >
                   Pricing
                 </Link>
@@ -70,7 +59,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/app"
-                  className="text-zinc-400 hover:text-white text-sm transition-colors"
+                  className="text-txt-secondary hover:text-txt-primary text-sm transition-colors duration-150"
                 >
                   Launch App
                 </Link>
@@ -80,14 +69,14 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider">
+            <h4 className="font-heading font-semibold text-txt-primary mb-4 text-xs uppercase tracking-widest">
               Legal
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               <li>
                 <Link
                   href="/privacy"
-                  className="text-zinc-400 hover:text-white text-sm transition-colors"
+                  className="text-txt-secondary hover:text-txt-primary text-sm transition-colors duration-150"
                 >
                   Privacy Policy
                 </Link>
@@ -95,7 +84,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/terms"
-                  className="text-zinc-400 hover:text-white text-sm transition-colors"
+                  className="text-txt-secondary hover:text-txt-primary text-sm transition-colors duration-150"
                 >
                   Terms of Service
                 </Link>
@@ -104,12 +93,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-zinc-800 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-zinc-500 text-sm">
+        <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-txt-muted text-sm">
             © {new Date().getFullYear()} LegalForge by Automatik Studio. All
             rights reserved.
           </p>
-          <p className="text-zinc-600 text-xs">
+          <p className="text-txt-muted text-xs">
             Documents generated by AI. Always review with a legal professional.
           </p>
         </div>
