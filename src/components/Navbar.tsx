@@ -40,6 +40,12 @@ export default function Navbar() {
               Pricing
             </Link>
             <Link
+              href="/blog"
+              className="text-txt-secondary hover:text-txt-primary transition-colors duration-150 text-sm font-medium"
+            >
+              Blog
+            </Link>
+            <Link
               href="/app"
               className="px-5 py-2 rounded-button bg-teal text-white font-heading font-semibold text-sm hover:bg-teal-deep transition-colors duration-150"
             >
@@ -85,6 +91,13 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
             >
               Pricing
+            </Link>
+            <Link
+              href="/blog"
+              className="block text-txt-secondary hover:text-txt-primary transition-colors duration-150 text-sm font-medium"
+              onClick={() => setMobileOpen(false)}
+            >
+              Blog
             </Link>
             <Link
               href="/app"
